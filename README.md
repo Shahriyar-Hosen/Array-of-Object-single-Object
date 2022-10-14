@@ -1,7 +1,6 @@
 ## Merge multiple objects inside the same array into one object [duplicate]
 
 ```sh
-
     var arrObj = [{a:1, b:2},{c:3, d:4},{e:5, f:6}];
 
     how can i merge this into one obj?
