@@ -22,6 +22,7 @@ const arrObj = [
 ];
 
 // 1.
+// simple use reduce function
 console.log(
   arrObj.reduce(function (result, current) {
     return Object.assign(result, current);
