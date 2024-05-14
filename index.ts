@@ -1,21 +1,4 @@
-// Merge multiple objects inside the same array into one object [duplicate]
-
-/* 
-let arrObj = [
-  { a: 1, b: 2 },
-  { c: 3, d: 4 },
-  { e: 5, f: 6 },
-];
-
-how can you merge this into one obj? 
-
-*/
-
-//mergedObj = {a:1, b:2, c:3, d:4, e:5, f:6}
-
-//Answers
-
-const arrObj = [
+const arrObj: { [key: string]: number }[] = [
   { a: 1, b: 2 },
   { c: 3, d: 4 },
   { e: 5, f: 6 },
@@ -24,7 +7,7 @@ const arrObj = [
 // 1.
 // simple use reduce function
 console.log(
-  arrObj.reduce(function (result, current) {
+  arrObj.reduce(function (result: { [key: string]: number }, current: { [key: string]: number }) {
     return Object.assign(result, current);
   }, {})
 );
